@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#dc0ad9;;
+    color: #ffff;
+    min-height:100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: #0dd7bd;
+    color: black;
+    padding: 2rem;
+    height: 65vh;   
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+form{
+    margin: 2rem 0 1rem 0;}
+
+form select,button,input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 0.60rem;
+}
+ form input {
+    border: 1px solid #dc0ad9;;
+    font-size: 1rem;
+   min-height: 3rem;
+   padding-left:0.5rem;
+ }
+ .dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+ }
+ .select-container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 8rem;  
+   border:1px solid #dc0ad9;;
+   border-radius: 0.5rem;
+   background-color: #ffff;
+ }
+ .select-container img{
+    max-width: 10rem;
+
+ }
+ .dropdown i{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+ }
+ .to,.from p{
+    text-align: center;
+    font-size: 1.5rem;
+ }
+ .select-container select{
+    font-size: 1.2rem;
+   
+ }
+ .msg {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+ button{
+    height: 3rem;
+    background-color:#dc0ad9;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius:30px;
+    color: #ffff;
+    border: 1px solid #fff;
+ }

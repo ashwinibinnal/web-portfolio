@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even-Odd Number Table</title>
+    <link rel="stylesheet" href="oddeven.css">
+</head>
+
+<body>
+    <h1>Separation of<span> EVEN</span> and <span>ODD</span> numbers</h1>
+    <div class="container">
+        <div class="input-box">
+            <label for="no"></label>
+            <input type="number" id="no" name="no" placeholder="Enter Number">
+            <button type="button" onclick="oddEven()">Submit</button>
+        </div>
+        
+        <div class="left-box">
+    
+            <p>Even Numbers</p>
+            <hr>
+            <p id="demo"></p>
+        </div>
+        <div class="right-box">
+            <p>Odd Numbers</p>
+            <hr>
+            <p id="demo1"></p>
+        </div>
+    
+    </div>
+    
+    <script>
+
+        /*     function oddEven() {
+                 let n = document.getElementById("no").value;
+                 if (n % 2 == 0) {
+                     document.getElementById("demo").innerHTML = n;
+                 }
+                 else {
+                     document.getElementById("demo1").innerHTML = n;
+                 }
+             }
+             */
+             const even = [];
+             const odd = [];    
+             
+            function oddEven() {            
+             let x = document.getElementById("no").value;
+            if(x % 2 == 0){                
+            even.push(x);
+            document.getElementById("demo").innerHTML = even;
+            }
+           else{
+            odd.push(x);
+            document.getElementById("demo1").innerHTML = odd;
+
+           }
+            
+       }
+
+    
+       
+
+        
+       
+
+    </script>
+
+</body>
+
+</html>

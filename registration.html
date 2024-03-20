@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register form</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: bisque;
+
+        }
+
+        body {
+            background-color: rgb(118, 165, 149);
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=mail],
+        input[type=phone]  {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid rgb(63, 101, 103);
+            box-sizing: border-box;
+        }
+
+        input[type=radio]{
+            border: 2px solid rgb(41, 41, 50);
+
+        }
+
+        button {
+            width: 100px;
+            background-color: rgb(45, 184, 45);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+    <form>
+        <fieldset style="background-color:bisque;">
+
+            <table>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter name" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Enter password" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <input type="radio" name="gender">male
+                        <input type="radio" name="gender">female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="mail" placeholder="Enter Email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone no:
+                    </td>
+                    <td>
+                        <select>
+                            <option>+91</option>
+                            <option>+22</option>
+                            <option>+44</option>
+                            <option>+7</option>
+                            <option>+1</option>
+                        </select>
+                        <input type="phone" name="">
+                    </td>
+                </tr>
+            </table>
+            <button type="Submit">submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

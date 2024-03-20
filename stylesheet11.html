@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>my page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Lucida Sans, Verdana;
+      margin: 20px;
+      line-height: 26px;
+
+    }
+
+    header {
+      font-family: lucida sans, verdana;
+      background-color: green;
+      color: white;
+      text-indent: 10px;
+      line-height: 0.1;
+      padding: 10px;
+
+    }
+
+   
+
+    .nav1 {
+      background-color: #0dd851;
+      color: white;
+      padding: 14px 20px;
+      text-align: left;
+      text-decoration: none;
+      margin: 5px;
+      display: block;
+      border-style: groove;
+      border-radius: 5px;
+      border-color: #8a8c8b;
+    }
+
+    a.one {
+      background-color: #dce1dd;
+      color: rgb(14, 13, 13);
+      padding: 14px 25px;
+      text-align: left;
+      margin: 5px;
+      text-decoration: none;
+      display: block;
+      border-style: 1px ridge lightgray;
+      border-radius: 5px;
+
+
+    }
+
+    div.relative {
+      position: relative;
+      max-width: 25%;
+      height: 200px;
+
+    }
+
+    div.absolute {
+      position: absolute;
+      top: 90px;
+      right: 320px;
+      margin-left: 0px;
+      max-width: 45%;
+      height: 200px;
+      display: block;
+
+    }
+
+    a.one:hover {
+      background-color: white;
+    }
+
+    .nav2 {
+      color: black;
+    }
+
+    .nav2:hover {
+      text-decoration: none;
+    }
+    #sidebar{
+     background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    max-width:20% ;
+    bottom: 0;
+    top:110px;
+    right: 20px;
+    position: absolute;
+    height: 450px;
+
+    }
+    #bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 90%;
+    margin-top: 22%;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Home Page</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </header>
+  <div class="relative">
+      <nav>
+        <a class="nav1" href="stylesheet11.html">Stylesheet1</a>
+        <a class="nav1 one" href="stylesheet2.html">Stylesheet2</a>
+        <a class="nav1 one" href="stylesheet3.html">Stylesheet3</a>
+        <a class="nav1 one" href="stylesheet4.html">Stylesheet4</a>
+        <a class="nav1 one" href="nostylesheet.html">No Stylesheet</a>
+      </nav>
+    
+  </div>
+  <div class="absolute">
+    <h1>Same Page Different Stylesheets</h1>
+    <p>This is a demonstration of how different stylesheets can change the layout
+      of  HTML page. You can change the layout of this page by selecting different
+      stylesheets in the menu,or by selecting one of the following links:</p>
+    <a class="nav2" href="stylesheet11.html">Stylesheet1</a>,
+    <a class="nav2" href="stylesheet2.html">Stylesheet2</a>,
+    <a class="nav2" href="stylesheet3.html">Stylesheet3</a>,
+    <a class="nav2" href="stylesheet4.html">Stylesheet4</a>.
+    <h1>No Style</h1>
+    <p>This page uses DIV elements to group different sections of the HTML page.
+      Click here to see how the page looks like with no stylesheet:</p>
+    <a class="nav2" href="nostylesheet.html">No Stylesheet</a>
+  </div>
+  <div id="sidebar">
+    <h3>side-Bar</h3>
+    <p>Lorem ipsum dolor sitamet, consectetuer adipiscing elit,
+       sed diam nonummy nibh euismod tincidunt
+       ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+  <div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
+    praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+}  
+
+ body {
+    height: 100%;
+    background: url('https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/ecosystem.jpg');
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    
+  
+  }
+
+  
+  div{
+    position: absolute;
+    left:400px;
+    top:200px;
+    background: rgba(0, 60, 10, 0.6);
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+  
+    
+  }
+  label{
+    color: hwb(0 100% 0%);
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  input[type=text]{
+    padding:5px;
+    margin-left: 100px;
+    
+  }
+  button{
+    padding:5px;
+    background-color: dodgerblue;
+    color: #ffff;  
+    width:100px;
+  }
+  .button{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+  

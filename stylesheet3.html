@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stylesheet3</title>
+    <style>
+        body {
+            font: 100% Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        h1,
+        h2,h3 {
+            color: #4CAF50;
+
+        }
+
+
+        a.menuitem {
+            color: #fff;
+            background-color: lightslategray;
+            float: left;
+            width: 165px;
+            padding: 4px;
+            margin: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: auto;
+            list-style-type: none;
+
+        }
+
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .one {
+            color: black;
+        }
+
+        a.menuitem:hover {
+            background-color: rgb(30, 30, 30);
+        }
+
+        a.menuitem:nth-child(3) {
+            background-color: #099a48;
+            color: #ffffff;
+        }
+
+        a.menuitem:nth-child(3):hover {
+            background-color: rgb(30, 30, 30);
+        }
+
+        .one:hover {
+            color: #4CAF50;
+        }
+        #sidebar{
+            border:1px solid gray;
+            background-color: #f1f1f1;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div>
+        <a class="menuitem" href="stylesheet11.html">Stylesheet1</a>
+        <a class="menuitem" href="stylesheet2.html">Stylesheet2</a>
+        <a class="menuitem" href="stylesheet3.html">Stylesheet3</a>
+        <a class="menuitem" href="stylesheet4.html">Stylesheet4</a>
+        <a class="menuitem" href="nostylesheet.html">No Stylesheet</a>
+    </div>
+    <br>
+    <br>
+    <div class="clearfix">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.
+            You can change the layout of this page by selecting different stylesheets in the menu,
+            or by selecting one of the following links:<br>
+            <a class="one" href="stylesheet11.html1">Stylesheet1,</a>
+            <a class="one" href="stylesheet2.html">Stylesheet2,</a>
+            <a class="one" href="stylesheet3.html">Stylesheet3,</a>
+            <a class="one" href="stylesheet4.html">Stylesheet4.</a>
+        </p>
+        <h2>No Style</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page.
+            Click here to see how the page looks like with no stylesheet:
+            <br>
+            <a class="one" href="nostylesheet">No Stylesheet.</a>
+        </p>
+    </div>
+    <div id="sidebar">
+        <h3>Side-Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+    </div>
+
+</body>
+
+</html>

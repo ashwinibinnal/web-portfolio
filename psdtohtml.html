@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Psd to html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            background-color: #ffff;
+        }
+
+        .flex-container1 {
+            display: flex;
+            background-color: #0c426e;
+            color: #ffff;
+
+        }
+
+        .flex-item-left1 {
+            background-color: #0c426e;
+            flex: 25%;
+            list-style-type: none;
+            font-size: 26px;
+            font-family: poppins;
+            margin-top: 10px;
+        }
+
+        .flex-item-middle1 {
+            background-color: #0c426e;
+            flex: 70%;
+            float: left;
+            font-size: 17px;
+            font-family: poppinss;
+        }
+
+
+        .flex-item-right1 {
+            background-color: #0c426e;
+            flex: 5%;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+            margin-right: 10px;
+
+
+
+        }
+
+        ul,
+        li,
+        a {
+            float: left;
+            list-style-type: none;
+            margin: 5px;
+            padding: 5px;
+            color: #ffff;
+            text-decoration: none;
+
+
+        }
+
+        /* Responsive layout - makes a one column-layout instead of a two-column layout */
+        @media (max-width: 800px) {
+
+            .flex-item-right1,
+            .flex-item-left1,
+            .flex-item-middle1 {
+                flex: 100%;
+            }
+        }
+
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+
+            background-color: #f9f9f9;
+
+
+        }
+
+        .flex-item-left2 {
+            flex: 50%;
+            background-color: #f9f9f9;
+            margin-left: 100px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+
+        }
+
+        .flex-item-right2 {
+            flex: 50%;
+            background-color: #f9f9f9;
+
+
+        }
+
+        .clean {
+            font-size: 80px;
+            font-family: poppins1;
+            line-height: 0px;
+
+
+        }
+
+        .p {
+            font-size: 17px;
+            font-family: poppinss;
+
+
+        }
+
+
+
+        .button1 {
+            padding: 10px;
+            font-size: 17px;
+            margin: 10px;
+            font-family: poppins;
+            color: #ffff;
+            background-color: #0c426e;
+            width: 190px;
+
+
+        }
+
+        .button2 {
+            padding: 10px;
+            font-size: 17px;
+            font-family: poppins;
+            color: #ffff;
+            background-color: #252525;
+            width: 190px;
+
+
+        }
+
+        .img1 {
+            height: 380px;
+            width: 550px;
+            margin-top: 130px;
+            margin-left: 20px;
+
+
+        }
+
+
+        @media (max-width: 800px) {
+            .flex-container2 {
+                flex-direction: column;
+            }
+        }
+
+        @font-face {
+            font-family: poppins;
+            src: url(fonts/Poppins/Poppins-SemiBold.ttf);
+        }
+
+        @font-face {
+            font-family: poppinss;
+            src: url(fonts/Poppins/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: poppins1;
+            src: url(fonts/Poppins/Poppins-Bold.ttf);
+        }
+
+        div.next {
+            padding-top: 30px;
+            background-color: #fafafa;
+            font-family: poppins;
+            font-size: 40px;
+
+        }
+
+        h1 {
+            font-family: poppins;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #underline {
+            background-color: #252525;
+            width: 70px;
+            height: 8px;
+            margin: auto;
+            border-radius: 8px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        div.gallery {
+
+            float: left;
+            width: 30%;
+            height: 700px;
+           
+        }
+
+        div.gallery img {
+            height: 330px;
+            width: 330px;
+            background-color: #ffff;
+           
+
+        }
+
+        div.desc {
+            margin: 10px;            
+            text-align: center;
+            background-color: #ffff;
+        }
+
+        .h11 {
+            font-family: poppins;
+            font-size: 30px;
+        }
+
+        .p2 {
+            font-family: poppinss;
+            font-size: 17.1px;
+        }
+
+        .see {
+            background-color: black;
+            color: #ffff;
+            font-family: poppins;
+            font-size: 17px;
+            padding: 5px 10px;
+
+        }
+
+        div.section {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .were {
+            font-family: poppins;
+            font-size: 40px;
+            margin-top: 90px;
+        }
+
+
+        #underline1 {
+            background-color: #252525;
+            width: 70px;
+            height: 10px;
+            margin-top: 10px;
+            margin: auto;
+            display: block;
+            border-radius: 8px;
+
+        }
+
+        #border-img {
+            background: url(img/psd/Layer\ 7\ \(1\).png) no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+            margin: auto;
+        }
+
+        .ppp {
+            font-family: poppins;
+            font-size: 30px;
+            color: #ffff;
+            margin-top: 100px;
+            text-align: center;
+            padding-top: 70px;
+
+        }
+
+        .ppp1 {
+            font-family: poppinss;
+            font-size: 17.1px;
+            padding-top: 50px;
+            padding-left: 200px;
+            padding-right: 100px;
+        }
+
+        .button3 {
+            font-size: 17px;
+            font-family: poppins;
+            background-color: #f9fafb;
+            border: #f8f7f7;
+            width: 250px;
+            text-align: center;
+            padding: 20px 30px 20px 30px;
+
+        }
+
+        .ppp2 {
+            padding-left: 500px;
+            padding-top: 90px;
+        
+        }
+
+        .column {
+            float: left;
+            width: 29%;
+            height: 300px;
+            margin: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .colum1 {
+            font-family: poppins;
+            font-size: 20px;
+            color: #4c7494;
+        }
+
+        .ppp3 {
+            font-family: poppinss;
+            font-size: 17px;
+
+        }
+
+        .colum2 {
+
+            color: #ffff;
+        }
+        div.gall {
+            background-color: #FFFFFF;
+            width: 900px;
+            height: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        div.gall img {
+            float: left;
+            height: 250px;
+            width: 150px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        .ppp4 {
+            padding-top: 50px;
+            font-family: poppinss;
+            font-size: 17px;
+
+        }
+
+        .ppp5 {
+            font-family: poppinss;
+            font-size: 20px;
+            line-height: 0.1px;
+
+        }
+
+        .ppp6 {
+            font-family: poppinss;
+            font-size: 12px;
+            color: #0c426e;
+        }
+
+        .arrow {
+            height: 100px;
+            width: 100px;            
+            margin-top: 40px;
+            margin-left:100px;
+
+        }
+
+        .arrow11 {
+            height: 100px;
+            width: 100px;
+            margin-top: 40px;
+
+        }
+
+
+        .flex {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        @media screen and (max-width: 600px) {
+            .flex-container3,.flex-container3>div {
+                width: 100%;
+            }
+        }
+
+        .flex-container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            background-color: #242424;
+
+
+        }
+
+        .flex-container3>div {
+            background-color: #242424;
+            width: 20%;
+            padding: 10px;
+            font-size: 30px;
+            color: #f1f1f1;
+        }
+
+        .pppp2 {
+            font-size: 17px;
+            font-family: poppinss;
+            color: #f0f0f0;
+        }
+
+        @font-face {
+            font-family: opensan1;
+            src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf)
+        }
+
+        @font-face {
+            font-family: opensan2;
+            src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf)
+        }
+
+
+        .h2 {
+            font-size: 20px;
+            font-family: opensan2;
+        }
+
+        .pppp1 {
+            color: #929292;
+            font-size: 17px;
+            font-family: opensan1;
+        }
+
+        .lastbut {
+            background-color: #0b416d;
+            color: #ffff;
+            padding: 10px;
+            width: 200px;
+            font-size: 10px;
+            font-family: poppinss;
+        }
+
+        .mail {
+            padding: 10px;
+            width: 200px;
+            font-size: 10px;
+            font-family: poppinss;
+        }
+
+        .icons {
+            background-color: #242424;
+            text-align: center;
+            color: #ffff;
+            font-size: 25px;
+
+        }
+
+        .lastp {
+            color: #c4c3c3;
+            font-size: 17px;
+            font-family: poppinss;
+            line-height: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="flex-container1">
+            <div class="flex-item-left1">
+                <li>CleanCars</li>
+            </div>
+
+            <div class="flex-item-middle1">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#quality">QUALITY</a></li>
+                    <li><a href="#choose">CHOOSE</a></li>
+                    <li><a href="#testimonial">TESTIMONIAL</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-item-right1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="flex-container2" id="home">
+            <div class="flex-item-left2">
+                <p class="clean"> Keep Your</p>
+                <p class="clean">Clean Cars</p>
+                <p class="clean">Always</p>
+                <p class="p">There are many variations of passages of lorem ipsum available</p>
+                <p class="btn"><button class="button1" type="button">Get A Quote</button>
+                    <button class="button2" type="button">Contact Us</button>
+                </p>
+            </div>
+            <div class="flex-item-right2">
+                <img class="img1" src="img/psd/Layer 10.png">
+            </div>
+        </div>
+        <div id="services">
+            <h1 class="text">Our <span style="color: #0c426e;">Services<span id="underline"></span></h1>
+        </div>
+        <div class="section" id="services">
+            <div class="gallery">
+                <img src="img/psd/Layer 6.png" alt="Car wash" width="600" height="400">
+                <div style="background-color: #f8f8f8;">
+                    <div class="desc">
+                        <h1 class="h11">Express Exterior</h1>
+                        <p class="p2">It is along established fact that a reader will be distrocted b the readable
+                            content
+                            of
+                            page when looking at its layout.The point of using Lorem ipsum is that it has a more-or-less
+                            normal
+                            distrubution of letter,as apposed </p>
+                        <button class="see" type="button">See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="img/psd/Layer 4.png" alt="car wash" width="600" height="400">
+                <div style="background-color: #f8f8f8;">
+                    <div class="desc">
+                        <h1 class="h11">Auto Detailing</h1>
+                        <p class="p2">It is along established fact that a reader will be distrocted b the readable
+                            content
+                            of
+                            page when looking at its layout.The point of using Lorem ipsum is that it has a more-or-less
+                            normal
+                            distrubution of letter,as apposed </p>
+                        <button class="see" type="button">See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="img/psd/Layer 8.png" alt="caar wash" width="600" height="400">
+                <div style="background-color: #f8f8f8;">
+                    <div class="desc">
+                        <h1 class="h11">Full Service Car Wash</h1>
+                        <p class="p2">It is along established fact that a reader will be distrocted b the 
+                            readable content of page when looking at its layout.The point of 
+                            using Lorem ipsum is that it has a more-or-less normal distrubution of letter,as apposed</p>
+                        <button class="see" type="button">See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="quality" class="were">We're Providing Best Quality Service<span id="underline1"></span> </span></h1>
+        </div>
+        <div id="border-img">
+            <p class="ppp">Clean And Quality</p>
+            <p class="ppp1">It is along established fact that a reader will be distrocted b the readable content of
+                page when looking at its layout.The point of using Lorem ipsum is that it has a more-or-less normal
+                distrubution of letter,as apposed It is along established fact that a reader will be distrocted b the
+                readable content of
+                page when looking at its layout.The point of using Lorem ipsum is that it has a more-or-less normal
+                distrubution of letter,as apposed</p>
+            <p class="ppp2"><button class="button3" type="button">Get A Quote</button></p>
+        </div>
+        <div>
+            <h1 class="were">Why <span style="color: #0c426e;">Choose Us?</span><span id="underline1"></span> </span>
+            </h1>
+        </div>
+        <div style="margin-left:7%;" id="choose">
+            <div class="row">
+                <div class="column" style="background-color:#ffff;">
+
+                    <svg width="80" height="80" style="float:left;">
+                        <circle cx="50" cy="50" r="20" stroke="#4c7494" stroke-width="2" fill="#ffff" />
+                        <text fill="black" font-size="17" x="40" y="58">01 </text>
+                    </svg>
+
+                    <br>
+
+                    <p class="colum1">Trusted Services</p>
+                    <p class="ppp3">It is a long established that a reader will be distracted by the readable content of
+                        a
+                        page when looking at its layout.The</p>
+                </div>
+                <div class="column" style="background-color:#0c426e;">
+                    <svg width="80" height="80" style="float:left;">
+                        <circle cx="50" cy="50" r="20" stroke="#ffff" stroke-width="2" fill="#0c426e" />
+                        <text fill="#ffff" font-size="17" x="40" y="58">02 </text>
+                    </svg>
+
+                    <br>
+
+                    <p class="colum1 colum2">Talented Workers</p>
+                    <p class="ppp3 colum2">It is a long established that a reader will be distracted by the readable
+                        content
+                        of a page when looking at its layout.The</p>
+                </div>
+                <div class="column" style="background-color:#ffff;">
+                    <svg width="80" height="80" style="float:left;">
+                        <circle cx="50" cy="50" r="20" stroke="#4c7494" stroke-width="2" fill="#ffff" />
+                        <text fill="black" font-size="17" x="40" y="58">03 </text>
+                    </svg>
+
+                    <br>
+
+                    <p class="colum1">Organic Products</p>
+                    <p class="ppp3">It is a long established that a reader will be distracted by the readable content of
+                        a
+                        page when looking at its layout.The</p>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial">
+            <h1 class="were"><span style="color: #090909; background-color: #ffff;">Testimonial</span><span
+                    id="underline1"></span> </span></h1>
+        </div>
+        <br><br><br>
+        <div class="flex">
+            <div>
+                <img class="arrow" src="img/psd/right-arrow-svgrepo-com (1).png">
+            </div>
+            <div class="gall">    
+                <img style="margin-right: 40px;" src="img/psd/igor-stepanov-5uUPrmZgEYM-unsplash.png" height="10"
+                    width="10">
+                <p class="ppp4"> It is a long established that a reader will be distracted by the readable content of a
+                    page when looking at its layout.The point of using loreum ipsum that</p>
+                <p class="ppp5">JOECH</p>
+                <p class="ppp6">Customer</p>
+            </div>
+            <div>
+                <img class="arrow11" src="img/psd/right-arrow-svgrepo-com.png">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="contact">
+            <div class="flex-container3">
+    
+                <div>
+                    <h2 class="h2">Contact Us</h2>
+                    <p class="pppp1"><i class="fa-solid fa-location-dot"></i> location</p>
+                    <p class="pppp1"><i class="fa-solid fa-phone"></i> 01 1234567890</p>
+                    <p class="pppp1"><i class="fa-solid fa-envelope"></i> demo@gmail.com</p>
+                </div>
+                <div>
+                    <br><br><br>
+                    <h2 class="h2">Useful link</h2>
+                    <p class="pppp2">home</p>
+                    <p class="pppp1">services</p>
+                    <p class="pppp1">quality</p>
+                    <p class="pppp1">choose</p>
+                    <p class="pppp1">testinomial</p>
+                    <p class="pppp1">Contact us</p>
+                </div>
+                <div>
+                    <h2 class="h2">Openining Time</h2>
+                    <p class="pppp1">mon:07;00am to 09;00pm</p>
+                    <p class="pppp1">mon:07;00am to 09;00pm</p>
+                    <p class="pppp1">mon:07;00am to 09;00pm</p>
+                </div>
+                <div>
+                    <h2 class="h2">Newsletters</h2>
+                    <input class="mail" type="mail" id="emails" placeholder="Enter Your Mail">
+                    <p><button class="lastbut" type="button">SUBSCRIBE</button></p>
+                </div>
+            </div>
+            <div class="icons">
+    
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <p class="lastp">@ 2020 All Rights Reserved.Designed By Free Html Templates</p>
+    
+            </div>
+            </div>
+        
+
+
+
+    </div>
+</body>
+
+</html>

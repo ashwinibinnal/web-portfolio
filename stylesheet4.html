@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>stylesheet4</title>
+    <style>
+        body {
+            background-color: black;
+            font: 100% Courier New;
+            margin: 20px;
+            line-height: 8px;
+        }
+
+        #top {
+            color: rgb(21, 239, 21);
+            padding: 5px;
+        }
+
+        #menulist {
+
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        .menuitem {
+            color: rgb(21, 239, 21);
+            cursor: pointer;
+            padding: 10px;
+            display: list-item;
+            text-decoration: none;
+        }
+
+        .menuitem:hover {
+            color: white;
+        }
+
+        #active {
+            color: #ffff;
+        }
+
+        #sidebar {
+            color: #ffff;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 10px;
+            position: absolute;
+            line-height: 20px;
+            top: 100px;
+            right: 100px;
+            width: 400px;
+
+        }
+
+        h1 {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        #main {
+            color: rgb(21, 239, 21);
+            padding: 10px;
+            line-height: 30px;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .one{
+            color: #ffff;
+        }
+        .one:hover{
+            color: rgb(21, 239, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+    <div>
+        <ul id="menulist">
+            <li><a class="menuitem" href="stylesheet11.html">Stylesheet1</a></li>
+            <li><a class="menuitem" href="stylesheet2.html">Stylesheet2</a></li>
+            <li><a class="menuitem" href="stylesheet3.html">Stylesheet3</a></li>
+            <li><a id="active" class="menuitem" href="stylesheet4.html">Stylesheet4</a></li>
+            <li><a class="menuitem" href="nostylesheet.html">No Stylesheet</a></li>
+        </ul>
+    </div>
+    <div id="sidebar">
+        <h4>side-bar</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div id="main">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can
+            change the layout of your HTML page. You can change the layout of this page by selecting different
+            stylesheets in the menu, or by selecting one of the following links:<br>
+            <a class="one" href="stylesheet11.html">Stylesheet1,</a>
+            <a class="one" href="stylesheet2.html">Stylesheet2,</a>
+            <a class="one" href="stylesheet3.html">Stylesheet3,</a>
+            <a class="one" href="stylesheet4.html">Stylesheet4.</a>
+        </p>
+        <h2>No Style</h2>
+        <p>
+            This page uses DIV elements to group different sections of the HTML page.
+             Click here to see how the page looks like with no stylesheet:
+             <br>
+             <a class="one" href="nostylesheet.html">No Stylesheet.</a>
+        </p>
+    </div>
+</body>
+
+</html>
