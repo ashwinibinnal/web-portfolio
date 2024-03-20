@@ -1,89 +1,231 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.8.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.8.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.8.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <img src="img/logo3.jpg" alt="logo" width="100px" height="100px">
+            </div>
+            <div class="nav-right">
+                <a href="#home" class="active">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="home" id="home">
+            <div class="home-left">
+                <h1 class="h1">Hi</h1>
+                <h1 class="h11">I AM</h1>
+                <h1 class="h1">ASHWINI BINNAL</h1>
+                <p class="p1">Self-motivated and hardworking fresher
+                     seeking for an opportunity to work in a challenging environment to prove my
+                     skills and utilize my knowledge & intelligence in the growth of the organization. </p>
+                     <a href="AshwiniBinnal.pdf" download="AshwiniBinnal" class="downBtn">download CV</a>
+            </div>
+            <div class="home-right">
+                <div class="circle">
+                    <img src="img/IMG_20181118_003855_785.jpg" alt="mypic">
+                    <h2>Web developer</h2>
+                    <a href="webresume.html">Hire Me</a>
+                </div>
+            </div>
+        </div>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+        <h1 class="services-h1" id="skills"> SKILLS</h1>
+        <div class="skills services">
+
+            <div class="services-sub "><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/640px-C_Programming_Language.svg.png">
+
+            </div>
+            <div class="services-sub "><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png">
+            </div>
+            <div class="services-sub "><img
+                    src="https://a0.anyrgb.com/pngimg/1054/1306/css-animations-style-sheet-sass-programming-language-web-developer-css3-cascading-style-sheets-javascript-html-emblem.png">
+
+            </div>
+            <div class="services-sub "><img
+                    src="https://vistaran-tech.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/05/13104442/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png">
+
+            </div>
+            <div class="services-sub "><img src="img/jquerylogo.png">
+
+            </div>
+            <div class="services-sub "><img src="img/bootstraplogo.jpg">
+
+            </div>
+            <div class="services-sub "><img src="img/pythonlogo.png">
+
+            </div>
+
+        </div>
+        <!-- projects -->
+        <h1 class="services-h1" id="projects"> PROJECTS</h1>
+        <div class="project">
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="adharform.html">
+                        <img src="img/adhaarcard.png" alt="adhaar card" width="600" height="400">
+                    </a>
+                    <div class="desc">ADHAAR CARD</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="passport.html">
+                        <img src="img/passport33.jpg" alt="passport form" width="600" height="400">
+                    </a>
+                    <div class="desc">PASSPORT FPRM</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="calculator/calculator1.html">
+                        <img src="img/calculator.jpg" alt="resume" width="600" height="400">
+                    </a>
+                    <div class="desc">CALCULATOR</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="socialapp/socialpage.html">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTilCW3dwf8dyK1ttAbpWoeL37OQ3RG2QZsmwEnMzjiWzp2jSsqM9EMYzT6uPh-GV5ib_A&usqp=CAU"
+                            alt="app" width="600" height="400">
+                    </a>
+                    <div class="desc">SOCIAL APP</div>
+                </div>
+            </div>
+            <div class="responsive" style="clear: left;">
+                <div class="gallery">
+                    <a href="layout.html">
+                        <img src="img/ganeshcard22.jpg" alt="ganesh pic" width="600" height="400">
+                    </a>
+                    <div class="desc">GANESH CHATURTHI</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="invitation.html">
+                        <img src="img/invitation.jpg" alt="INVITATION" width="600" height="400">
+                    </a>
+                    <div class="desc">INVITATION</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="psdtohtml.html">
+                        <img src="img/psdtohtml.jpg" alt="psd" width="600" height="400">
+                    </a>
+                    <div class="desc">PSD TO HTML</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="stylesheet11.html">
+                        <img src="img/stylesheets.jpg" alt="stylesheets" width="600" height="400">
+                    </a>
+                    <div class="desc">STYLESHEETS</div>
+                </div>
+            </div>
+
+            <div class="responsive" style="clear: left;">
+                <div class="gallery">
+                    <a href="bookmark.html">
+                        <img src="img/chandrayaan.jpg" alt="chandrayaan" width="600" height="400">
+                    </a>
+                    <div class="desc">CHANDRAYAAN-3</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="registration.html">
+                        <img src="img/registration.jpg" alt="registration" width="600" height="400">
+                    </a>
+                    <div class="desc">ONLINE REGISTRATION</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="webresume.html">
+                        <img src="img/resume.png" alt="bird" width="600" height="400">
+                    </a>
+                    <div class="desc">WEB RESUME</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="oddeventabel/evenodd.html">
+                        <img src="img/javascriptlogo.png" alt="month" width="600" height="400">
+                    </a>
+                    <div class="desc">SEPARATION OF EVEN AND ODD NUMBER</div>
+                </div>
+            </div>
+            <div class="responsive" style="clear:left;">
+                <div class="gallery">
+                    <a href="resume.html">
+                        <img src="img/resume.png" alt="resume" width="600" height="400">
+                    </a>
+                    <div class="desc">RESUME</div>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="emical.html">
+                        <img src="img/emicalculator.png" alt="psd" width="600" height="400">
+                    </a>
+                    <div class="desc">LOAN CALCULATOR</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="loginform.html">
+                        <img src="img/loginform.png" alt="login" width="600" height="400">
+                    </a>
+                    <div class="desc">LOGIN</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="currency.html">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRYVGBgaHBgYHBwYGhwaGBgcGRkaGRoYGBgcIS4lHB4rHxoZJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISHDQmISM3MTQ0PzQ0ND80MTQ1ND00MT80Njo0MTQ/MTQ0ND80PzQ3MTE0NDE0NDFANDQ2MTc0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQYEBwj/xABKEAABAgMCCAcMCAYCAwEAAAABAAIDERIEIQUGMUFRYXGREyKBsbLR8AcUFRYjMlJicpKh0iRCVHOCorPBF1Njk9Ph4vFVg6Mz/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwQFBv/EACgRAQACAgIDAAAFBQEAAAAAAAABAhExAxIEIVEyYXGRoRQiQWLBgf/aAAwDAQACEQMRAD8A0APbsE4hNkn3adS5uhAUjht7bQlPKkJPYqhAE6Sa5DGnQFAA7dyWnUklJLLXtQE5Z0hCcRJNmgCO16RoSt2fFJ27XoCW1KAnSTZIAkcqQEJS6SHDWgdNMJvzJZIIQBOzWkQJICBSESCVJORQIO3aSeNCQnZ22JAgUTzoLkpl2kkM0BUhw2IkgaJKobMpE/kO4oRSOCGlOmu3BVhER3GkGzAMs57c6QkzhwuSNC1b8FwM2zOf3UfguDoG49avWU7QzRGxNktP4Lg6tx60HBcHVuPWnU7QzGb/AEgFafwXB1bndaBgyDq/N1p1O0MxyoAWo8GwdX5utJ4Mg6vzdadTtDMkFIQtR4Mg6vzdaTwXB1bndadTtDMNKUlXlqwWyRldrE5jkOVUTTxnNPnNMjo0gjUQQeVSa4WLRJeQ7kAZk+FDLnBoOU3futJCwTBDRMzJE855kiMpNsMsSnNJWmOC4Ggbj1o8FwNA3HrV6naGYcmuatScFQNA3HrR4Lg6tx606naGYYbsyHHUtP4LgaBuPWjwXB1bj1p1O7MMOb9kArTjBkHVuPWjwZB1bj1pg7QzYdNIJ6VphgyDq3HrUcTBsPMB+YfunU7QzhKSR1KfCELg3gT4rrhPM4CcjycxUW5SYwsTkVIRxdSFFI0nWrPArrz7R6IVXL/a78EmTiPWPRC1TbNtLypFShqRUujkmqRUoalVYx4fhWOCYsQ6mtHnPdmA60F0XrMYsY5NtkeNBbCewwgSS5wIMn0XAZL15ThXH+3Wl9MN7obSZNZCF51TykqiwdhS1Wd8R0J74bzdEIF/nZHTF16mVw+m6kVLzDEfuiujPbAtVIc65rxcHHM1wzE6V6TUhhNUipQ1IqVQtofxTsPMsi9/0mLokzoBai0v4p2HmKyYM7RF2M6DVm2mq/iWVlMnt5eiVpQ64bAstZn8YcvRK0TX3DYFKaLbT1IqUFaK1tlPUipQVqlxoxmhWKFW/jPNzGA8Zx/Ya0GhqSVL58wljhhC2PpY6IKpyhwA6ZGiTeM5c8TBWFIA4UwrYwC+qT+LrdLzeVTK4fRlSKl4rif3Q7WIsODFabQHuaxuaIC4yEjkPKvY6kMJ6kVKCtFaqM/jK++H963oOTd/bkUWMT5uZ963oFPlcudtulNHUaj25EJtB08yFloGXaS6cGO4/KegFzjRNPsLpPA1u6AWq7S2l1UipQVIqXRyT1LxjutW9z7WIc+LDYJDW68nmXsFS8i7rGDXNtDbRIlkRobPMHNncdov5CpKw3Xc+wPDs9jhxGtHCxWCI98uNJ4m1gP1WgSuGUzKy3ctM7ZbZ3gtdOd4Plc4OVJif3QIcOCyz2kFtDQxrwJtLQJNDgLwQLuRRdyyKO+7U6YkWmR0ziTCK4u6Diu6DaGvssJ9DxXTDa4hj2kTppHFBmCBmvkvVMXbc+NZoMR7XNiOaA8OaWmtvFdcbxMgnlXYIhGQlIX60TKepFSgqRUqhbW/iO2HmKzNmd5aLsZ0Gq+tr+I7YeYrOWF3los9DOg1Ztpqv4liwycDt6JV+19w2DmVBFuly8xVw19w2DmUrott0VIqUFSKltlM6IACTcBeV8+Y1YXfbbW5wm4VUQ2i+6cmgDSTzrc454+cG6LZobJ8UsL6sjnC+Q1TXnGL+EG2e0Q47mViG6oNnKbgDRfmk6R5FJWIe7YpYuw7DBDGgGK4AxX53OztBzNbkA5cpV4Hryj+K7vszffPUj+K7vszffPUhiW/h4u2ZtqFrZDDYoa4cWQYXOkC+mVzpVCY9I571cVKuwbaXPhMe9tD3ta8tnOmoTAOuRC6qkRPUkL1DUkL1RQYbdN7B/Vb+mV1NO34qtwq+cRn3jf01YvXO23Smj5a+dCjqGpIstnk6k2zO8qPxdAJSueG6UZo9roBaptm2lvWitc9SKl0cnRWoLZZ4cVjocVrXtdcWuFx6iMxF4RWsRHx+ptBgOgSk8MqL9LpVSlyqCHC3czY4l1mjUZTTFBc3YHtvA2tO1YGy4LjudEbBa95hTq4OZIAdTMAXkT1L3pzsq867m7pWu17D+qjUSo8A46WmzODXudEhgyLXmbhppJvB1FewYOwgyNDZFYZseJjqOsZFgO6lYGUQ44aA+qhxFxcJEirSRLKpO5TbHOgxoZ82G5jm/8AsDpjZNk+Uok6eiVorXPUipVBb38R3su5iqPBRnEifg6DVZ4Rf5N/su6JVTgRri6IZGRokZGR4jchWbaar+JZWlxpv19Eq0a+5uwcyp7fcyd+fLPQdKsGP4rfZHMpTRbbprRWuepFS2y8zx7w9Ari2eHZrOXmQdGobwgdlMnUznmnOaymAMJss8QvfAhxxS5oZEaHNBJHGk4G8SO9ex4YwZCiQYrRCg1ua8V8GyuZGWumc9c15FilHZDtkExGtc0uoc17Q5vHBbe1wlcSDyKNQuvHaB/4yw/22fIrPFzD8K1R2QG4NsQqmXO4JnFa0Eud5mgbyFuvB9n+z2b+zD+VSQbPDYSWQ4TCRIlkNjHEXGU2tBlcLtSJl3F6K1z1IqVR0VpC9QVIL0Gft75xmj+o39NXcpjKs7aXztA+8b+mFoQVztt0poSOntuSp1R0fBCjZgb2kuGcrQwandALtdJVsV30lmx3QCtds20sakVKGtFa6OSapeYd0XA7mRe+GibHyDiPqvF1+0cxXpNaZHhte0se0Oa4SLXCYI0EKLEsji9j3DcwMtBoeBKv6rrsp0FVWJOFIMG0Wp8R7WtIMifrTiTuGe5WGEu59CcS6BFMMei8F7RscOMBtB2rK4CxbdaYsSGIjGcHOZIcZgOp4oA55Ivp2464yttTmshzENhJmcrnG6cswW5xHwU6z2VtYk+IeEcDcWtIAhtOuUzLNUubAeJ9ns7g9xdHiNvBcA1gOlrL5nW4nYtI55N5yokylqXfYMHvim65uk5FBgux8I6+5oyk5LrzPUFYW/CN1EPisF2s6zq1Lz8/kV4o9u3Fw2vKcss0K4+UcN09qgi4XByQmjaZn9lVEppXyL+ZyW16fSp4tK79ul9qmcktk5fFQPkbxl3JhSLlHNeJzEu88VJjEwThJZf+tvWnVJjxPauVsSkyOQ3bD1FfT8TzO09L7/xP18/yfE6x2pr/AD+TtqXkmPWAzAjGI0eTiEuBGRrje5pObORy6F6pUorTBbEa5j2hzXCRa7Ieo6wvovBEsrizjxDcxrLQ6h7QBWfNdLOTmK0cTGSytFRtEKWpwJ3C9ZPCHc9Y4kwI1A9GICQNQe2+W0cqrm9zq0TvjWcDPIxCd3BhD00dgxw74tsOBBEoZrLnEcZ9MNzhIZhMBa2pZbF7FGDZXiKXuixQHAGVENtQLSQ28uMiReQL8i0VSEp6kpeuepBeqige/wCkj7xn6YWneL1kWunavxt/SC2GUZ/gudtulNEmUIq1/BKstlIVFbIlNphzyEPH5FeBx3Kqw3YXPAezzxsnkImJzE7yMmcq1nEs2jMJa9aWpZGI61tMpRDroZ1qMxrX6MT3Gda6ZhzxPxsqkVLG8Na/Rie4zrRw1r9GJ7jOtMwYn42Na4sH4Ls8BznQmUvf5xL3OnxqrgTIXrN8Pa/Rie4zrRw1r9GJ7jOtMwYn42VSA7MNixpjWv0YnuM61ZYvPtDrQzhA8MFTjU1gFzTK8X5Zblm94rWbfFpWbWiPrdiJQylueQJ0gXneb1xlSRXXqvwvw3Av4CXC0mmcpT5bpynKd05TX5y1p5b+5fbpWKV9Q6yU0rzmnDnr74KbThv198Fen+j/AN4/dz/qf9Z/Z6QVxswjDMV8GYERgBINxIcAam6Rp0blg6cN+vvgrOYTFr74HC198cWVMqsnFpozy0Lpx+FE5zaJ/SWb+XMYmKz/AOvaCuW0s3G49agwJw/At75p4TPTllmrldVplcuq0Dirw3iaW9Tr491Ji8RmNuezxpiRImCWnaLlLwg0hZjCjLRw54GuRYxxApy3tPnA6AucwrboibmfKv0PFyRalbfYfn+Xjmt7V+S1/CDSEcINIWP4O2/1NzPlRwVt0RNzPlXXMOeJ+Nhwg0hHCDSFj+Dtvr7mfKgQ7b6+5nypmDE/Gw4QaQmvigDKFkeDtvr7mfKmxYFscJSeZ5i5rRylrZpmDE/HVZoofaxIzm+Y/AxrD8VtmhZXFnF57HcLGIrlIAXNaMwA0Zdq1UtS52nMulYxCTg9vblQopnSUiinty51PAsrnupaJnmXOSrjAMSROmrmaD+6sRktOIN8BxRlluPUmnAT9W53Urt0ZxzlJwh0lb6w59pUvgN+rc7qR4CiavdPUrrhDpKOEOkp1g7SpfAT9W49SBgKJq3O6ldcIdJRwh0lOsHeVN4DiatzupcttwY+G0PMpAyyHODpC0fCHSVyYVm6E4XmXG3XrnzUzS0R8l0474vWZ+s+4pqZDddLQorbZ+EY5hc5tQIqaaXDW0r83XEz7fcn1HpS4TxqhMjw7Owhz3PaxxB4kMFwBmc7tWbPoV2bQz02e8F5PhHFGLCjshuM4cR7WCKGzaKiBxmzudfknfmKuP4bn7SP7f8AzX0r+P48Vr/fj/rx05uaZn+3P/G+NoZ6bPeC5GQIDYrowo4R4AJJBIAAAa3QLuVYz+HB+0j+3/zSfw5P2n/5/wDNYji4I1yb/KXSb8074/5b8OBvBnsTI54pXBi/gnvWDwVZfxnOJIkL5CTWzMhdvJXVaX5AvHyRWszFZzD28eZxMxiTsE2V74zqJXMbOZl9ZxV74NiaG+8OpR4mAhsR4yPdIbG3T+E+Vabvh2kr73j8fXirE/HwfI5M8tpj6zfgyJob73+kHBcTQ33lpO+HaSjvh2krt1hx7M0cFRNDfeThgyJob7y0ffDtJR3w7SU6wdmbOC4mhu8Jr8GxJZG7x1LTd8O0lNfFJy3p1g7Sx7rjSQQRmKD2yrpxieGuY4Za6ORzC6W8LnAWZjEt1nMGzQny1IUUharHA5kSPWPQC4V04Mdx+U9ALVNs20u6kVKGtE10ck1SKlDNQ2q1BjHvd5rGucdjRNByYwYzWexsqjPkT5rG3vdsGjWsBau6+avJ2YFul779wCwlutUbCFrzufFeGsbmaCZNGoAZTtK9VwZ3NLCxgEVr47/rOL3MbPPQ1hEhtJKi4hy4D7qjIsRkOJAcwvc1oLTUJuMgJSnlK9GJWNsmIVihWiHaITXsMN1YZXWxxANJNU3AgyOXMtZWhLOW2CYbyM2Ua2/6ybkB08iubfZREbI3EXtOgrNvqY6lwk74O1tOfZlXw/M8W3Hab1j1P8Pr+L5EXrFbT7j+XU4A5RP/AFeEhKibGGe5PqGleKJy93XAKE0uGlRPjjNermIaisyke+QVbGLnuDGefEMhqGd3IPjJJaLSag0AvecjBl2nQNa0WAME8HOJEk6I7LoaMzW6l6/E8a3LaLWj1H8vL5fk14qTWs+5/hx4WxqgYNEOBEhxZFk2uaAWulc6RJyi7eFZYsY0wbcx7oNQoIa5r5B14mDIHIZHcVX4+YDFrsrmtHlGcdmkuAvbyiY3LyjufYc70tbajKHE8m+eQTPFcdjvgSvuvh7fQc0TUNa57fbmwob4jzJrGlx5AqypMY8e7NY4ohRA9z6Q40AGkHIDM5VZYt4wstsMxYbHtYHFk3gCogAmmWUCYXz/AGiJFt1rJAnEjPAaNFRk0agBn1L6EwRg9lmgQ4EPzWNDZ5Kjlc863OJPKosws5oLlDWkL1UZ3GV97PvW9ApWnYoMYH8dn3regVM7YudtulNHV7PihNnqSLLZ8+1ymsDuPynoBQgosrvKj8XQCtds20ua0VrnrRWurk6K1T42OPedoll4N/Mu98SQJ0Ca82wj3SWPZEhmzu4wc2dYzzE8igzvczl4RgzzCKRt4J//AHyL3StfOmLmFBZrTCjkFwYTMC4kOa5plyOW+/ioz7M73x1JCzD02tFao8XcMi1QGxw0tDi4UkzPFMsqtK1UdFagtMBj20vaCPiNiStFagpLdgt7AXMeHgTNL8twyBw/eap2Wt5c5pgvm2U6S1wvAIlOWlaq3v4jvZdzFUWCzOJF/B0Grycnh8Nvcx7/ACevi8vmr6if3cjo8TNAf+ItaNOkrug4HtD5VubDab5Mvd7x/YLsjmQ39Eq3a+4bBzKcfh8NfeM/q1yeZzW9Zx+jnwbguHBHEbxjlcb3HaVYVrnrRWvZEYeOZy6K14j3ScB972kxGiUONN4lkDvrt3mfLqXs1axmO2ELFaIESzvjw2xWGbZz4r25iZXTvB2oQtO5/h3vmyNqM4kOUN2kyHFfytlygqg7rWHaWMszDe/jvl6I80HaeZY3EPD3etpBeZQ4gpfoHou5DdscVXYUtrrZanPc4N4RwALjJrGzkCScgAvRce257kmA732x4yThwp+kRx4guzA0g+s7QvUK1nMXsJ2KiHZrNFa7g2SAblIHnPN2UuJcdbld1okuitFa560F6qM/hp83s+9b+mV3SVXhJ84rR/Ub+mrS7SudtulNCY1pE6oIWWwTtUMJ/lm/i6AUzW9rlyVStDR7XQCtds20s6kVKCpFS6uScuVC7E7B5JJs4JJmfKRcpvyB6t6lzYRt7YMN8R5kGNJ2nMOUqDxSPZ2ttbodPEEammZlTXKmc55Lp5V667EvB0z9Gbl/mRf8i8vxYsjrTbmXXV8K86GNdW6e6W0he0OfMzSFk2wWOHAYIcFgYxsyGgude4zN7iTl1roqUFSKlUT1IqUFSKkDcIP8m/2XdEqnwLe+J+DoNVhhJ/k3+y7olVuLpm6IfY6DVm2lrtY2sybv5irJj7m7BzKswmZMPLzFdjH8VvsjmUrpbbdFaK1BWitbZT1rI4RxDssaK+K6JHa57i4hpZIE6JtmtPWvPcMYlWuLGiRGR4TWvcXAOe8EA6QGkDeosM/jri/DscRjYT3Pa9pPHlUCDI+aAJZPirDEvFCFaoL4saI9gD6GhlIJpaHOLiQfSbLYVSYyYDjWVzGxojHlwJFDnOkAQL6miU9WhduL2K9ptMEvhRYbWh7m0ve9pqDWkkBrSMhF+pRXomL2KUCyRTFhRIrnFjmSeWyk4gk8VoM7lo61hsUsVrRZo5iRosNzaHNAY97jUS2Rk5oGYrZVqpKetBeoK0heqihtj/Lt+8b+mr1x2rNR3/SB7bf0wtNPtJc7bdKaNmkRShZbPKrHu+ks2O6AVoWaZqmtDpWlg1P6C1TbNtLGpFShqRUujkkixaWlxyAE7hNeR40Y0PtRpALYYvDc5Oly9XdeCDeDcVUeK9h+zN9+L86ixLAYBxnNkYWwoLC53nveSXOA81oAlS0aL5nLmAsf4jWj+XC/N1rW+K9g+zM9+L/kR4r2D7Mz34v+RDMMn/Ea0fy4X5utb7AtudGs8OK4AOe2ogZBeRn2Kt8V7B9mZ78X/IrWzw2MY1jGhjGClrQSQBMnK4knLnKE4dVSKlDUipVEWFH+Tf7LuiVw4sEkvy/U6DVNhZ/kn+y/olcuKbvP/B0GrNtLXa2wzdDPbMVOx/Fb7LeZc2Hj5EntkKex/Fb7LeZK6W209aK1DNE1plNWitQzRNB573UD5SD7DucK77mrvobvvn9CGrq24Ls8YgxoTYhaCBUXiU8vmuGjOpbFZIUFlEFjWMmXSaXGbiACZuJORo3KLn07q0VqGaJqomrSF6imkLkGec/6T+Nv6QWtAWNY/wClfjb+k1bEaO3MudtulNH8GhNq2/BKstFJVDh5ha9kWR4s8msEXnNm3a1egpHMabjKRuM1YnBMZhjXYyAXFjwddHzJPGYeg7ez5lon4FgTmWN7ciTwFZ/5bVrsx0n6z3jMPQdvZ8yPGYeg7ez5lofAVn/lt+CQ4BgD6je3InY6T9Z/xnb6D97PmR4zD0Hb2fMtC3Adn/lt+HUlOArPcaG9uROx0n6zvjMPQdvZ8yPGdvoP3s+ZaI4Bs/8ALbuTRgOBL/8ANu5Ox0n6z/jO30H72fMjxnb6D97PmWg8A2f0G7kvgKz+g34J2On5sdhTGCttAGX6oIc93qhrZhoOckrR4pWR7IRc+5zzVLRoA2ZORWMDBEBhmGN+CsBKUtCzNstVrhxYXgl8JzRO8cui4cqz7MNNYA11UwAPNJBkMxC1c53XKtteAoEQzc2WmWnYkWwWrlUeMDPW9xyPGBnre45dpxVs/olHirZ/RK12hjrLi8YGet7jkvjAz1vccu1uK1m0IGKtm9E7ynaF6z9cPjCz1vccjxhZ63uOXZ4r2f0SkOK9m9H4p2g6y5PGBnre45L4wM9b3HLsbitZ5+b8UHFWz+id6doTrLi8YGet7jkyNjCyRpDj+EjeTkCsG4q2f0SkdilZs7J7f9p2heks7i690e01i9oJc5w80uNwDTnAAlNb9xOrtyqCyWJkNsmNDQuk5FmZzLda4glWpKmyGlIopae00+SR3bKkaRkQI4bNCGhPnq5k09uwQOB7SSOKQSTp9rkDA6X/AGn5UxwT2aECAnsQkGXIU508t/wSuIQMI1c6G7UhRyoFLdaBdnSnbzpECvkgO3IF4z/FEu00COCQBPy3phAQBanBNl8E4H49tCALe0gmE6U5zj2mkd2yIASzJeQ/BNbPtNOCBG7CnFm34JpOrmTqdP7IEldn+CGaL9yJSQQgKNZ3FKkqKVA5nb4prv3QhA/MVFE/ZKhADN2zp2YoQgHZVHoSIQLmT8wQhAjcvKEp7fFCECBL1IQgG5U0ZdyVCBWZ00JUIEZ+ye3Ju50IQBUY60iECtT0IQNzqTMhCBpTGpEIBCEIr//Z" alt="login" width="600" height="400">
+                    </a>
+                    <div class="desc">CURRENCY CONVERTER</div>
+                </div>
+            </div>
+
+
+        </div>
+        <h1 style="clear: left;" class="services-h1">CONTACT ME</h1>
+        <div class="contact" id="contact">
+
+            <div class="contact-info">
+                <p><i class="fa-solid fa-user"></i> Ashwini Binnal</p>
+                <p><i class="fa-solid fa-phone"></i> +91-8296007090</p>
+                <p><i class="fa-solid fa-envelope"></i> ashu.bh8296@gmail.com</p>
+            </div>
+            <!-- <div class="icons">            
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.instagram.com/teddyskutty/"><i class="fa-brands fa-instagram"></i></a>
+        </div> -->
+
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>
